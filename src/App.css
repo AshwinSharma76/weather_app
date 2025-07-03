@@ -36,3 +36,60 @@
     transform: rotate(360deg);
   }
 }
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-top: 5px;
+  padding: 10px;
+  width: 92%;
+  background-color: #2a9d7c;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+#navbar p {
+  height: auto;
+}
+#searchfield {
+  padding-left: 10px;
+  color: black;
+  height: 35px;
+  width: 50vw;
+  margin-right: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(245, 245, 245, 0.347);
+}
+
+#searchfield:focus {
+  font-weight: 600;
+  color: grey;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: rgba(245, 245, 245, 0.55);
+  box-shadow: none; /* optional: blue glow effect */
+}
+#vedio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+#logoImg {
+  height: 50px;
+  marginleft: 15px;
+}
+
+#searchIcon {
+  height: 35px;
+  width: auto;
+  background-color: transparent;
+  cursor: pointer;
+}
