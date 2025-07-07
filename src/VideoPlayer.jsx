@@ -32,7 +32,7 @@ const VideoPlayer = ({ props }) => {
           );
         } else if (condition.includes("rain")) {
           updateurl(
-            "https://res.cloudinary.com/dmcuezfk6/video/upload/v1751902159/rain_bkbqjd.mp4"
+            "https://res.cloudinary.com/dmcuezfk6/video/upload/v1751909010/5174040-uhd_2560_1440_30fps_d9ake8.mp4"
           );
         } else if (condition.includes("snow")) {
           updateurl(
