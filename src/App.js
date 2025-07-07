@@ -4,7 +4,6 @@ function App() {
   return (
     <>
       <NavBar />
-      <div id="vedio"></div>
     </>
   );
 }

@@ -55,7 +55,8 @@
 }
 #searchfield {
   padding-left: 10px;
-  color: black;
+  color: rgb(105, 103, 103);
+  font-weight: 600;
   height: 35px;
   width: 50vw;
   margin-right: 5px;
@@ -66,7 +67,7 @@
 
 #searchfield:focus {
   font-weight: 600;
-  color: grey;
+  color: rgb(105, 103, 103);
   border-radius: 5px;
   border: none;
   outline: none;
@@ -75,11 +76,9 @@
 }
 #vedio {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: -1;
+  z-index: -2;
 }
 
 #logoImg {
@@ -92,4 +91,104 @@
   width: auto;
   background-color: transparent;
   cursor: pointer;
+}
+#overlape {
+  margin-top: 20px;
+  position: absolute;
+  z-index: -1;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95vw;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.548);
+  border-radius: 18px;
+}
+
+#headDiv {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  font-size: 30px;
+  font-weight: 600;
+}
+#headDiv img {
+  padding-right: 10px;
+  height: 25px;
+}
+
+#headDiv label {
+  color: whitesmoke;
+}
+
+#dateTime {
+  font-size: 15px;
+  font-weight: 500;
+  color: #f6f6f6;
+}
+#temprature {
+  text-align: center;
+  font-size: 90px;
+  font-weight: 400;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  color: whitesmoke;
+}
+
+#tempheadDiv {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  align-items: center;
+}
+#weather {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+
+#dataRow {
+  margin: 20px;
+  padding: 5px;
+  border-radius: 18px;
+  display: flex;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  align-items: center;
+  text-align: center;
+}
+#windSpeed {
+  font-size: 18px;
+  font-weight: 600;
+  color: #165946e9;
+}
+#windSpeed span {
+  font-size: 15px;
+  font-weight: 600;
+  color: #165946e9;
+}
+@media (min-width: 600px) {
+  #overlape {
+    margin-top: 20px;
+    margin-left: 50px;
+    position: absolute;
+    z-index: -1;
+    top: 55%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    width: 500px;
+    height: fit-content;
+    background-color: rgb(17, 142, 117);
+    border-radius: 18px;
+  }
+
+  #vedio {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+  }
 }
