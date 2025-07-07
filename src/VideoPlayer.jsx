@@ -31,9 +31,7 @@ const VideoPlayer = ({ props }) => {
             "https://res.cloudinary.com/dmcuezfk6/video/upload/v1751902138/cloud_mivhhd.mp4"
           );
         } else if (condition.includes("rain")) {
-          updateurl(
-            "https://res.cloudinary.com/dmcuezfk6/video/upload/v1751909010/5174040-uhd_2560_1440_30fps_d9ake8.mp4"
-          );
+          updateurl("git push origin main");
         } else if (condition.includes("snow")) {
           updateurl(
             "https://res.cloudinary.com/dmcuezfk6/video/upload/v1751902161/snow_yoqo31.mp4"
