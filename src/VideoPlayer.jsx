@@ -3,48 +3,78 @@ import { useState } from "react";
 import "./App.css";
 import DataBox from "./DataBox";
 const VideoPlayer = ({ props }) => {
-  let [url, updateurl] = useState("/videos/default.mp4");
+  let [url, updateurl] = useState(
+    "https://res.cloudinary.com/dmcuezfk6/video/upload/v1751902679/default_t1ibc4.mp4"
+  );
   const videoRef = useRef();
   useEffect(() => {
     if (window.innerWidth > 600) {
       if (!props || !props.current || !props.current.condition) {
-        updateurl("/videos/default.mp4"); // fallback
+        updateurl(
+          "https://res.cloudinary.com/dmcuezfk6/video/upload/v1751902163/default_sdqecm.mp4"
+        ); // fallback
       } else {
         const condition = props.current.condition.text.toLowerCase();
         if (condition.includes("mist") || condition.includes("fog")) {
-          updateurl("/videoPc/mist.mp4");
+          updateurl(
+            "https://res.cloudinary.com/dmcuezfk6/video/upload/v1751902179/mist_yvwwbu.mp4"
+          );
         } else if (condition.includes("sunny")) {
-          updateurl("/videoPc/sunny.mp4");
+          updateurl(
+            "https://res.cloudinary.com/dmcuezfk6/video/upload/v1751903059/mixkit-luxury-tourist-beach-2903-full-hd_oab3vo.mp4"
+          );
         } else if (
           condition.includes("cloud") ||
           condition.includes("overcast")
         ) {
-          updateurl("/videoPc/cloud.mp4");
+          updateurl(
+            "https://res.cloudinary.com/dmcuezfk6/video/upload/v1751902138/cloud_mivhhd.mp4"
+          );
         } else if (condition.includes("rain")) {
-          updateurl("/videoPc/rain.mp4");
+          updateurl(
+            "https://res.cloudinary.com/dmcuezfk6/video/upload/v1751902159/rain_bkbqjd.mp4"
+          );
         } else if (condition.includes("snow")) {
-          updateurl("/videoPc/snow.mp4");
+          updateurl(
+            "https://res.cloudinary.com/dmcuezfk6/video/upload/v1751902161/snow_yoqo31.mp4"
+          );
         } else {
-          updateurl("/videoPc/default.mp4");
+          updateurl(
+            "https://res.cloudinary.com/dmcuezfk6/video/upload/v1751902163/default_sdqecm.mp4"
+          );
         }
       }
     } else {
       if (!props || !props.current || !props.current.condition) {
-        updateurl("/videos/default.mp4"); // fallback
+        updateurl(
+          "https://res.cloudinary.com/dmcuezfk6/video/upload/v1751902679/default_t1ibc4.mp4"
+        ); // fallback
       } else {
         const condition = props.current.condition.text.toLowerCase();
         if (condition.includes("mist") || condition.includes("fog")) {
-          updateurl("/videos/mist.mp4");
+          updateurl(
+            "https://res.cloudinary.com/dmcuezfk6/video/upload/v1751902672/mist_nnbudi.mp4"
+          );
         } else if (condition.includes("sunny")) {
-          updateurl("/videos/sunnyDayvideo.mp4");
+          updateurl(
+            "https://res.cloudinary.com/dmcuezfk6/video/upload/v1751902675/sunnyDayvideo_oupyd3.mp4"
+          );
         } else if (condition.includes("cloud")) {
-          updateurl("/videos/cloud.mp4");
+          updateurl(
+            "https://res.cloudinary.com/dmcuezfk6/video/upload/v1751902668/cloud_s63xej.mp4"
+          );
         } else if (condition.includes("rain")) {
-          updateurl("/videos/rain.mp4");
+          updateurl(
+            "https://res.cloudinary.com/dmcuezfk6/video/upload/v1751902652/rain_sx9ige.mp4"
+          );
         } else if (condition.includes("snow")) {
-          updateurl("/videos/snow.mp4");
+          updateurl(
+            "https://res.cloudinary.com/dmcuezfk6/video/upload/v1751902640/snow_mrt6kz.mp4"
+          );
         } else {
-          updateurl("/videos/default.mp4");
+          updateurl(
+            "https://res.cloudinary.com/dmcuezfk6/video/upload/v1751902679/default_t1ibc4.mp4"
+          );
         }
       }
     }
