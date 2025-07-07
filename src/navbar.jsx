@@ -10,7 +10,7 @@ const NavBar = () => {
   async function getData(city) {
     try {
       let res = await axios.get(
-        `http://api.weatherapi.com/v1/current.json?key=3acf36feb44d493898d91944250307&q=${city}&aqi=yes`
+        `https://api.weatherapi.com/v1/current.json?key=3acf36feb44d493898d91944250307&q=${city}&aqi=yes`
       );
       updateData(res.data);
     } catch (error) {
